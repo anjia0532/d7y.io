@@ -14,7 +14,7 @@ When deploying with physical machines, the following conditions must be met.
 | Required Software | Version Limit |
 | ----------------- | ------------- |
 | Git               | 1.9.1+        |
-| Golang            | 1.12.x        |
+| Golang            | 1.16.x        |
 | Nginx             | 0.8+          |
 
 ## Procedure - When Deploying with Physical Machines
