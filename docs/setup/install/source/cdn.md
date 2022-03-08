@@ -26,11 +26,7 @@ When deploying with physical machines, the following conditions must be met.
    [github releases page](https://github.com/dragonflyoss/Dragonfly2/releases).
 
    ```sh
-   # latest version
-   # version=$(https://raw.githubusercontent.com/dragonflyoss/Dragonfly2/main/version/version.latest)
-
-   # stable version
-   version=$(curl -s https://raw.githubusercontent.com/dragonflyoss/Dragonfly2/main/version/version.stable)
+   version=2.0.2
 
    wget -o Dragonfly2_linux_amd64.tar.gz \
       https://github.com/dragonflyoss/Dragonfly2/releases/download/v${version}/Dragonfly2_${version}_linux_amd64.tar.gz
