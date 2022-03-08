@@ -50,7 +50,6 @@ systemctl restart docker
 ```
 
 > **Tips**：
-
 > Note that this action affects containers running on this host
 > For more information `/etc/docker/daemon.json`,
 > please refer to the [Docker documents](https://docs.docker.com/registry/recipes/mirror/#configure-the-cache).
