@@ -67,7 +67,12 @@ title: dfdaemon
 ### 启动 dfdaemon
 
 ```sh
-dfget dfdaemon --options
+# 下载 dfget 配置样例
+# 注意检查并修改样例配置文件，比如: scheduler.manager ...
+wget -o /etc/dragonfly/dfget.yaml \
+ https://raw.githubusercontent.com/dragonflyoss/Dragonfly2/main/docs/zh-CN/deployment/configuration/dfget.yaml
+
+dfget daemon --options
 ```
 
 dfget 部署完成之后，运行以下命令以检查 **dfdaemon** 是否正在运行，以及 `65000`, `65001` 和 `65002` 端口是否可用。

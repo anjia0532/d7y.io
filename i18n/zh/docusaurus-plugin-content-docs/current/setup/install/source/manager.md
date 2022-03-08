@@ -67,6 +67,11 @@ title: Manager
 ### 启动 manager
 
 ```sh
+# 下载 manager 配置样例
+# 注意检查并修改样例配置文件，比如: database.mysql ...
+wget -o /etc/dragonfly/manager.yaml \
+ https://raw.githubusercontent.com/dragonflyoss/Dragonfly2/main/docs/zh-CN/deployment/configuration/manager.yaml
+
 manager --options
 ```
 

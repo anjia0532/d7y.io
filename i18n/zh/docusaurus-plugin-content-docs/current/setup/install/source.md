@@ -7,9 +7,11 @@ title: 源码安装
 
 ## 按模块单独安装
 
-- [install-dfdaemon](./source/dfdaemon.md) 是 dfdaemon 的安装指南
+> 注意: 需要先启动 mysql 和 redis 成功后，再启动 Manager ，成功后，才能启动其余组件
 
 - [install-manager](./source/manager.md) 是 manager 的安装指南
+
+- [install-dfdaemon](./source/dfdaemon.md) 是 dfdaemon 的安装指南
 
 - [install-scheduler](./source/scheduler.md) 是 scheduler 的安装指南
 

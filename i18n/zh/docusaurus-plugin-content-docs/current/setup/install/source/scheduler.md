@@ -67,6 +67,11 @@ title: Scheduler
 ### 启动 scheduler
 
 ```sh
+# 下载 scheduler 配置样例
+# 注意检查并修改样例配置文件，比如: job.enable,job.redis,manager.addr ...
+wget -o /etc/dragonfly/scheduler.yaml \
+ https://raw.githubusercontent.com/dragonflyoss/Dragonfly2/main/docs/zh-CN/deployment/configuration/scheduler.yaml
+
 scheduler --options
 ```
 

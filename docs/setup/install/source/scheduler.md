@@ -68,6 +68,11 @@ Or you can build your own scheduler executable file.
 ### Start scheduler
 
 ```sh
+# download scheduler configuration example
+# Notice: check and modify some config e.g. job.enable,job.redis,manager.addr ...
+wget -o /etc/dragonfly/scheduler.yaml \
+ https://raw.githubusercontent.com/dragonflyoss/Dragonfly2/main/docs/en/deployment/configuration/scheduler.yaml
+
 scheduler --options
 ```
 

@@ -68,6 +68,11 @@ Or you can build your own dfget executable file.
 ### Start dfdaemon
 
 ```sh
+# download dfget configuration example
+# Notice: check and modify some config e.g. scheduler.manager ...
+wget -o /etc/dragonfly/dfget.yaml \
+ https://raw.githubusercontent.com/dragonflyoss/Dragonfly2/main/docs/en/deployment/configuration/dfget.yaml
+
 dfget daemon --options
 ```
 

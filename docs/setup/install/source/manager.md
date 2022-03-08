@@ -68,6 +68,11 @@ Or you can build your own manager executable file.
 ### Start manager
 
 ```sh
+# download manager configuration example
+# Notice: check and modify some config e.g. database.mysql ...
+wget -o /etc/dragonfly/manager.yaml \
+ https://raw.githubusercontent.com/dragonflyoss/Dragonfly2/main/docs/en/deployment/configuration/manager.yaml
+
 manager --options
 ```
 

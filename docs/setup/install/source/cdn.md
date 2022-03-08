@@ -69,6 +69,11 @@ Or you can build your own cdn executable file.
 ### Start cdn
 
 ```sh
+# download cdn configuration example
+# Notice: check and modify some config e.g. base.manager ...
+wget -o /etc/dragonfly/cdn.yaml \
+ https://raw.githubusercontent.com/dragonflyoss/Dragonfly2/main/docs/en/deployment/configuration/cdn.yaml
+
 cdnHomeDir=/home/admin
 cdnDownloadPort=8001
 cdn --port=8003 --download-port=$cdnDownloadPort

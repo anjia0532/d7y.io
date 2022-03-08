@@ -68,6 +68,11 @@ title: CDN
 ### 启动 cdn
 
 ```sh
+# 下载 cdn 配置样例
+# 注意检查并修改样例配置文件，比如: base.manager ...
+wget -o /etc/dragonfly/cdn.yaml \
+ https://raw.githubusercontent.com/dragonflyoss/Dragonfly2/main/docs/zh-CN/deployment/configuration/cdn.yaml
+
 cdnHomeDir=/home/admin
 cdnDownloadPort=8001
 cdn --port=8003 --download-port=$cdnDownloadPort

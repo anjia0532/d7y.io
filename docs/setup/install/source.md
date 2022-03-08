@@ -8,9 +8,11 @@ the executable files separately according to the modules.
 
 ## Install separately
 
-- [install-client](./source/dfdaemon.md) is the installation instructions of dfdaemon
+> Notice: First startup redis and mysql, The second, startup Manager, The third startup other component.
 
 - [install-manager](./source/manager.md) is the installation instructions of manager
+
+- [install-client](./source/dfdaemon.md) is the installation instructions of dfdaemon
 
 - [install-scheduler](./source/scheduler.md) is the installation instructions of scheduler
 
