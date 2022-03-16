@@ -59,14 +59,6 @@
     "message": "其他",
     "description": "The label for category Others in sidebar docs"
   },
-  "sidebar.docs.link.Configuration": {
-    "message": "配置",
-    "description": "The label for link Configuration in sidebar docs, linking to https://github.com/dragonflyoss/Dragonfly2/tree/main/docs/zh-CN/deployment/configuration"
-  },
-  "sidebar.docs.link.Change logs": {
-    "message": "变更日志",
-    "description": "The label for link Change logs in sidebar docs, linking to https://github.com/dragonflyoss/Dragonfly2/blob/main/CHANGELOG.md"
-  },
   "sidebar.docs.category.Quick Start": {
     "message": "快速开始",
     "description": "The label for category Quick Start in sidebar docs"
@@ -79,10 +71,6 @@
     "message": "Containerd",
     "description": "The label for category Containerd in sidebar docs"
   },
-  "sidebar.docs.category.Source": {
-    "message": "源码安装",
-    "description": "The label for category Source in sidebar docs"
-  },
   "sidebar.docs.link.WIP katacoda": {
     "message": "WIP katacoda",
     "description": "The label for link WIP katacoda in sidebar docs, linking to https://www.katacoda.com/"
@@ -90,5 +78,9 @@
   "sidebar.docs.category.Preheat": {
     "message": "预热",
     "description": "The label for category Preheat in sidebar docs"
+  },
+  "sidebar.docs.category.Configuration": {
+    "message": "配置",
+    "description": "The label for category Configuration in sidebar docs"
   }
 }
