@@ -3,9 +3,9 @@ id: scheduler
 title: Scheduler
 ---
 
-## Configure Scheduler YAML File
+## Configure Scheduler YAML File {#configure-scheduler-yaml-file}
 
-The default path for the dfdaemon yaml configuration file is `/etc/dragonfly/scheduler.yaml` in linux,
+The default path for the scheduler yaml configuration file is `/etc/dragonfly/scheduler.yaml` in linux,
 and the default path is `$HOME/.dragonfly/config/scheduler.yaml` in darwin.
 
 ```yaml
@@ -50,7 +50,7 @@ scheduler:
     # peerGCInterval is peer's gc interval
     peerGCInterval: 10m
     # peerTTL is peer's TTL duration
-    peerTTL: 24h
+    peerTTL: 12h
     # taskGCInterval is task's gc interval
     taskGCInterval: 10m
     # taskTTL is task's TTL duration
@@ -77,7 +77,7 @@ host:
 # manager configuration
 manager:
   # addr manager access address
-  addr: 127.0.0.1:65003
+  addr: manager-service:65003
   # schedulerClusterID cluster id to which scheduler instance belongs
   schedulerClusterID: 1
   # keepAlive keep alive configuration

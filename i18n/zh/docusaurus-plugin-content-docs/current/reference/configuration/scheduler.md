@@ -45,7 +45,7 @@ scheduler:
     # peer 的回收间隔
     peerGCInterval: 10m
     # 不活跃的 peer 的存活时间
-    peerTTL: 24h
+    peerTTL: 12h
     # task 的回收间隔
     taskGCInterval: 10m
     # 不活跃的 task 的存活时间
@@ -72,9 +72,9 @@ host:
 # manager 配置
 manager:
   # manager 访问地址
-  addr: ''
+  addr: manager-service:65003
   # 注册的 scheduler 集群 ID
-  schedulerClusterID:
+  schedulerClusterID: 1
   # manager 心跳配置
   keepAlive:
     # 保持心跳的时间间隔

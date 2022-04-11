@@ -3,7 +3,7 @@ id: cdn
 title: CDN
 ---
 
-## Configure CDN YAML File
+## Configure CDN YAML File {#configure-cdn-yaml-file}
 
 The default path for the cdn yaml configuration file is `/etc/dragonfly/cdn.yaml` in linux,
 and the default path is `$HOME/.dragonfly/config/cdn.yaml` in darwin.
@@ -59,8 +59,8 @@ base:
 
   # manager configuration
   manager:
-    addr: ''
-    cdnClusterID: 0
+    addr: manager-service:65003
+    cdnClusterID: 1
     keepAlive:
       interval: 5s
 
@@ -134,7 +134,7 @@ jaeger: ''
 service-name: dragonfly-cdn
 ```
 
-## Configure Nginx
+## Configure Nginx {#configure-nginx}
 
 <!-- markdownlint-disable -->
 

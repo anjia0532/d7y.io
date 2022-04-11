@@ -8,7 +8,9 @@ title: Roadmap
 ### Manager
 
 - 控制台
-  - 优化页面 UI。
+  - 项目整体重构。
+  - 优化页面 UI, 整体页面视觉改版。
+  - 统一权限管理。
   - 项目增加 lint、test 等 Actions。
   - 增加开发文档。
   - 增加动态配置表单。
@@ -26,9 +28,18 @@ title: Roadmap
 - 优化当前基于负载进行的调度策略，改为基于 Peer 带宽进行调度。
 - 针对 Piece 下载优先级特征值进行调度。
 
-### [WIP] Dfdaemon
+### Dfdaemon
 
-### [WIP] CDN
+- 提升任务下载效率以及稳定性。
+- 使用 GRPC 双向流传递 Peer 间 Piece 信息。
+- 支持下载 Piece 优先级。
+
+### CDN
+
+- 提升数据下载效率
+- 提高存储数据文件缓存利用率
+- 使用 GRPC 双向流提供数据分片信息
+- 支持自定义文件传输协议
 
 ### 文档
 
@@ -37,5 +48,4 @@ title: Roadmap
 ### 其他
 
 - perf-tests 仓库中提供压测解决方案。
-- 提供 Kustomize 部署方案。
 - 升级 Golang 1.18 版本，基于泛型重构已有代码。

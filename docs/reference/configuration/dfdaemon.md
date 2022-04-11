@@ -3,7 +3,7 @@ id: dfdaemon
 title: Dfdaemon
 ---
 
-## Configure Dfdaemon YAML File
+## Configure Dfdaemon YAML File {#configure-dfdaemon-yaml-file}
 
 The default path for the dfdaemon yaml configuration file is `/etc/dragonfly/dfget.yaml` in linux,
 and the default path is `$HOME/.dragonfly/config/dfget.yaml` in darwin.
@@ -65,7 +65,7 @@ scheduler:
     # manager service addresses
     netAddrs:
       - type: tcp
-        addr: 127.0.0.1:65003
+        addr: manager-service:65003
     # scheduler list refresh interval
     refreshInterval: 5m
   # schedule timeout
@@ -75,7 +75,7 @@ scheduler:
   # below example is a stand address
   netAddrs:
     - type: tcp
-      addr: 127.0.0.1:8002
+      addr: scheduler-service:8002
 
 # current host info used for scheduler
 host:

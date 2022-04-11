@@ -9,45 +9,14 @@ It is used to manage the dynamic
 configuration of each system module and provide functions
 such as heartbeat keeping alive, monitoring the market, and product functions.
 
-## Try it
+## Usage {#usage}
 
 ```text
 manager [flags]
 manager [command]
 ```
 
-## Log configuration
-
-```text
-1. set option --console if you want to print logs to Terminal
-2. log path: /var/log/dragonfly/manager/
-```
-
-## Runtime metrics monitoring
-
-```text
-manager --pprof-port port
-```
-
-## Swagger support
-
-endpoint: /swagger/doc.json
-
-## Prometheus metrics monitoring
-
-endpoint: /metrics
-
-## HealthCheck
-
-endpoint: /healthy/
-
-## Enable jaeger
-
-```text
-manager --jaeger  http://localhost:14250/api/traces
-```
-
-## Available Commands
+## Available Commands {#available-commands}
 
 ```text
 completion  generate the autocompletion script for the specified shell
@@ -57,7 +26,7 @@ plugin      show plugin
 version     show version
 ```
 
-## Options
+## Options {#options}
 
 <!-- markdownlint-disable -->
 
@@ -73,6 +42,9 @@ version     show version
 
 <!-- markdownlint-restore -->
 
-## Manager Config
+## Log configuration {#log-configuration}
 
-[Config Example](https://github.com/dragonflyoss/Dragonfly2/blob/main/docs/en/deployment/configuration/manager.yaml)
+```text
+1. set option --console if you want to print logs to Terminal
+2. log path: /var/log/dragonfly/manager/
+```
